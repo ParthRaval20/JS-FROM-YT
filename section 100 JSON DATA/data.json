@@ -1,0 +1,12 @@
+{
+    "name" : "Parth",
+    "age" : 20,
+    "is_student" : true,
+    "passport_no" : null,
+    "p_lang" : ["c", "c++", "java", "python"],
+    "address" : {
+        "city" : "Rajkot",
+        "state" : "Gujarat",
+        "pincode" : 360004
+    }
+}
