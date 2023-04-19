@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Switcher</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid gray 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white{
+            background-color: white;
+        }
+        #aqua{
+            background-color: aquamarine;
+        }
+        #violate{
+            background-color: #ce9aff;
+        }
+        #black{
+            background-color: black;
+        }
+        #color-switcher{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="violate" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About Us</h1>
+    <img src="https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/iStock_000039291924_Medium.jpg" alt="Img">
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, sit? Fugit sit quisquam atque quia! Dolorem odio eos asperiores nesciunt eius enim doloremque! Voluptatem repellendus natus labore quo perspiciatis quos sit! Sunt, ex repellat deleniti voluptatibus natus praesentium atque eius dolorem assumenda nulla sit expedita cum est maxime maiores magnam aliquam totam? Consectetur ex ad sapiente repellat iusto commodi deserunt recusandae, eius laboriosam excepturi eligendi doloremque alias sed quibusdam, numquam eveniet placeat enim impedit minus fugiat dicta! Beatae, accusamus adipisci? Nemo quisquam rerum quam eos, officia dicta consequuntur magnam illum, aut, inventore soluta quas ab. Exercitationem, eaque eveniet ratione totam soluta cumque dolore nam? Enim error mollitia, quae numquam corporis qui ut vitae at iste cumque nulla voluptatem commodi fuga molestiae harum quod quidem? Cupiditate ratione quisquam repellendus. Iste sit vero quos adipisci laudantium aliquid. Libero vel repellendus rerum obcaecati, pariatur ea sed. Laboriosam laborum molestiae ullam aperiam obcaecati esse voluptas placeat aliquam unde suscipit mollitia iusto in, consequuntur cupiditate aliquid cum nostrum. Molestias repellat corporis perspiciatis nesciunt laborum tempora cupiditate exercitationem quaerat dolorem porro, delectus numquam reprehenderit expedita neque fugit obcaecati odio natus eaque eligendi id provident. Tenetur velit tempore sequi sunt eum error iusto blanditiis itaque. Culpa, tempore ipsam qui nobis tempora necessitatibus voluptatem amet incidunt fuga assumenda dignissimos pariatur similique repellendus sequi expedita, nulla sit beatae, non nesciunt enim. Laudantium voluptatibus labore quibusdam quam cum. Quos velit aspernatur expedita? Ratione cupiditate illum velit a voluptates temporibus ab. Quis dolores, hic eos nam fugit quisquam, expedita qui ad voluptate in quod, fuga error neque ipsa quasi tempore repudiandae rem aperiam commodi facilis voluptatum laborum! Deserunt vitae, quidem eum, numquam eligendi cupiditate atque est odio exercitationem nulla porro obcaecati laborum possimus! Nobis distinctio debitis molestias dolorum nemo incidunt iusto tenetur ullam eligendi placeat molestiae, accusantium rerum, perferendis repudiandae porro exercitationem quae id nulla eos assumenda fugit repellat vitae? Cum exercitationem reprehenderit mollitia accusantium tempora harum. Eaque porro fugiat aut asperiores incidunt molestias eos repudiandae alias deleniti quam magni, dolore, aliquid aspernatur cumque laudantium unde recusandae consectetur quas eius qui sed. Voluptates quo, libero ipsa alias aliquam tempore aliquid dolorum fugiat minima quidem consequatur obcaecati exercitationem illo doloribus vel rem adipisci, debitis commodi error. Dignissimos cumque impedit, mollitia recusandae architecto itaque. Possimus, accusantium odio expedita hic iste quidem blanditiis ullam earum totam, facilis minima pariatur fuga, itaque voluptatibus laboriosam! Eaque voluptatibus vero error esse commodi maxime, id quam obcaecati beatae, amet totam nisi aliquam itaque debitis, doloremque quas voluptatum perspiciatis est tenetur! Id dolorum voluptatibus iure rem exercitationem, necessitatibus facilis fuga labore accusantium temporibus voluptas repellendus reprehenderit totam dolore sunt vel omnis quas dignissimos enim eaque harum cupiditate nam. Iusto perspiciatis explicabo ad corporis odit est accusantium officiis porro aliquam cumque, asperiores ipsum hic laborum temporibus suscipit fuga, minus ratione qui reprehenderit. Modi corrupti natus praesentium qui doloremque necessitatibus possimus asperiores culpa provident? Quam odio voluptatum obcaecati at sapiente mollitia quaerat, nostrum similique dolore error sunt officiis totam doloremque eos dolorem, veniam facilis cum esse maiores ex accusantium iste. Quas?
+    </p>
+
+
+
+
+
+    <script>
+        function changeBG(color) {
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByClassName("text");
+            if(color == '#000000'){
+                for(let elm of txt){
+                    elm.style.color = "white";
+                }
+            }else{
+                for(let elm of txt){
+                    elm.style.color = "black";
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
